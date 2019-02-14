@@ -2,14 +2,14 @@
 
 Mods for the game Hades by Supergiant Games
 
-### Always Show Run Depth
+## Always Show Run Depth
 Causes the "Chamber X" text to always display, instead of just in the boon menu. Intended to be useful for speedrunners.
 
-### 100x Darkness
+## 100x Darkness
 Multiplies all darkness gained by 100. The tooltip will not show the different amount, so keep an eye on your darkness total at the bottom right when picking up darkness to see if the mod is working
 Note: This will also multiply the amount of darkness you lose when buying with darkness from the shopkeeper in the house of hades
 
-### Installation (Windows)
+## Installation (Windows)
 1. BACK UP YOUR SAVE FILES. This mod should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
 2. Download and install [git](https://git-scm.com). This will be used for patching the game files.
 3. Download this repository using "Clone or download" from the github page
@@ -20,8 +20,8 @@ Note: This will also multiply the amount of darkness you lose when buying with d
 7. While your command line is in the scripts folder, use  
 `git apply [path to .patch file]`
 
-### Uninstalling (Windows)
+## Uninstalling (Windows)
 1. Right click on Hades -> Verify through the Epic Games Store
 
-### Compatibility
+## Compatibility
 The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order
