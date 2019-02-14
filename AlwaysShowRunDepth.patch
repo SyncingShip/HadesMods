@@ -1,0 +1,51 @@
+From 6068cc04ceef0d41c25c90453b9c84f5b0550364 Mon Sep 17 00:00:00 2001
+From: SyncingShip
+Date: Thu, 14 Feb 2019 13:38:02 +0000
+Subject: [PATCH] After mod
+
+---
+ UIScripts.lua | 21 +++++++++++----------
+ 1 file changed, 11 insertions(+), 10 deletions(-)
+
+diff --git a/UIScripts.lua b/UIScripts.lua
+index 43ec3a0..eb6d4e8 100644
+--- a/UIScripts.lua
++++ b/UIScripts.lua
+@@ -922,6 +922,17 @@ function ShowLockKeyUI()
+ 	UpdateLockKeyUI()
+ 
+ 	FadeObstacleIn({ Id = ScreenAnchors.LockKeyIndicatorUI, Duration = CombatUI.FadeInDuration, IncludeText = true, Distance = CombatUI.FadeDistance.LockKey, Direction = 180 })
++
++	if ScreenAnchors.RunDepthId == nil and not CurrentRun.Hero.IsDead then
++		ScreenAnchors.RunDepthId = CreateScreenObstacle({ Name = "BlankObstacle", X = UIData.CurrentRunDepth.X, Y = UIData.CurrentRunDepth.Y, Group = "Combat_Menu_Overlay" })
++	end
++	local text = "CurrentRunDepth"
++	if CurrentRun.RunDepthCache >= 2 then
++		text = "CurrentRunDepth_Plural"
++	end
++	CreateTextBox( MergeTables( UIData.CurrentRunDepth.TextFormat, { Id = ScreenAnchors.RunDepthId, Text = text, } ) )
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 0, FadeDuration = 0.0 })
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 1, FadeDuration = 0.1 })
+ end
+ 
+ function UpdateLockKeyUI()
+@@ -1253,16 +1264,6 @@ function TraitUICreateTraitText()
+ 		ScreenAnchors.EmptyTray = nil
+ 	end
+ 
+-	if ScreenAnchors.RunDepthId == nil and not CurrentRun.Hero.IsDead then
+-		ScreenAnchors.RunDepthId = CreateScreenObstacle({ Name = "BlankObstacle", X = UIData.CurrentRunDepth.X, Y = UIData.CurrentRunDepth.Y, Group = "Combat_Menu_Overlay" })
+-	end
+-	local text = "CurrentRunDepth"
+-	if CurrentRun.RunDepthCache >= 2 then
+-		text = "CurrentRunDepth_Plural"
+-	end
+-	CreateTextBox( MergeTables( UIData.CurrentRunDepth.TextFormat, { Id = ScreenAnchors.RunDepthId, Text = text, } ) )
+-	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 0, FadeDuration = 0.0 })
+-	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 1, FadeDuration = 0.1 })
+ 
+ 	if not IsEmpty( GameState.ActiveMutators ) then
+ 		if ScreenAnchors.MutatorTrayId == nil then
+-- 
+2.16.1.windows.4
+
