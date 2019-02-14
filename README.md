@@ -17,6 +17,4 @@ Causes the "Chamber X" text to always display, instead of just in the boon menu.
 `git apply [path to .patch file]`
 
 ### Uninstalling (Windows)
-1. Navigate to `[Hades folder]/Content/Scripts`
-2. Delete UIScripts.lua
-3. Right click -> Verify through the Epic Games Store
+1. Right click on Hades -> Verify through the Epic Games Store
