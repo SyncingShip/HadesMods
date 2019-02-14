@@ -16,9 +16,12 @@ Note: This will also multiply the amount of darkness you lose when buying with d
 4. If you chose Use Git Bash Only, open Git Bash from the start menu. If you chose either of the other options, open Powershell or CMD
 5. Navigate your command line to the scripts folder with   
 `cd [Hades folder]/Content/Scripts`
-6. Move the patch file from the repository you downloaded into somewhere you know, such as the root folder Hades
+6. Move the patch file you wish to install from the repository you downloaded into somewhere you know, such as the root folder Hades
 7. While your command line is in the scripts folder, use  
 `git apply [path to .patch file]`
 
 ### Uninstalling (Windows)
 1. Right click on Hades -> Verify through the Epic Games Store
+
+### Compatibility
+The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order
