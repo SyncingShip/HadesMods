@@ -1,0 +1,25 @@
+From c64dd9e7f4661ced8765e065cab44cfc5a9fe754 Mon Sep 17 00:00:00 2001
+From: DistressedWhale <samwhale1999@gmail.com>
+Date: Thu, 14 Feb 2019 16:36:53 +0000
+Subject: [PATCH] Modded
+
+---
+ RoomManager.lua | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/RoomManager.lua b/RoomManager.lua
+index ed5a90c..6d9d4e6 100644
+--- a/RoomManager.lua
++++ b/RoomManager.lua
+@@ -1855,7 +1855,7 @@ function AddMetaPoints( amount, source, args )
+ 	end
+ 
+ 	GameState.MetaPoints = GameState.MetaPoints + (amount*100)
+-
++	
+ 	if not args.Silent then
+ 		MetaPointGainedPresentation( amount, args )
+ 	end
+-- 
+2.16.1.windows.4
+
