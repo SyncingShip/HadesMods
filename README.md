@@ -6,7 +6,7 @@ Mods for the game Hades by Supergiant Games
 Causes the "Chamber X" text to always display, instead of just in the boon menu. Intended to be useful for speedrunners.
 
 ## 100x Darkness
-Multiplies all darkness gained by 100. The tooltip will not show the different amount, so keep an eye on your darkness total at the bottom right when picking up darkness to see if the mod is working
+Multiplies all darkness gained by 100. The tooltip will not show the different amount, so keep an eye on your darkness total at the bottom right when picking up darkness to see if the mod is working  
 Note: This will also multiply the amount of darkness you lose when buying with darkness from the shopkeeper in the house of hades
 
 ## Installation (Windows)
