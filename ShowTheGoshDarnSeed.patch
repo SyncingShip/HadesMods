@@ -1,0 +1,30 @@
+From 17fe47a5f1e1902150b39822246430093ca14e87 Mon Sep 17 00:00:00 2001
+From: SyncingShip
+Date: Sun, 17 Feb 2019 01:51:47 +0000
+Subject: [PATCH] After mod
+
+---
+ UIScripts.lua | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/UIScripts.lua b/UIScripts.lua
+index 43ec3a0..03c6783 100644
+--- a/UIScripts.lua
++++ b/UIScripts.lua
+@@ -509,6 +509,13 @@ function ShowMetaPointUI()
+ 		return
+ 	end
+ 
++	-- mod start
++	ScreenAnchors.SeedId = CreateScreenObstacle({ Name = "BlankObstacle", X = UIData.CurrentRunDepth.X, Y = UIData.CurrentRunDepth.Y + 20, Group = "Combat_Menu_Overlay" })
++	CreateTextBox( MergeTables( UIData.CurrentRunDepth.TextFormat, { Id = ScreenAnchors.SeedId, Text = "Seed: " .. tostring(GetGlobalRng().seed), } ) )
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 0, FadeDuration = 0.0 })
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 1, FadeDuration = 0.1 })
++	-- mod end
++
+ 	ScreenAnchors.MetaPoint = CreateScreenObstacle({ Name = "BlankObstacle", Group = "Combat_UI", X = ConsumableUI.StartX + ConsumableUI.SpacerX * 2  + CombatUI.FadeDistance.MetaPoint, Y = ConsumableUI.StartY + ConsumableUI.SpacerY * 0 })
+ 
+ 	SetAnimation({ Name = "MetaPointIcon", DestinationId = ScreenAnchors.MetaPoint })
+-- 
+2.16.1.windows.4
+
