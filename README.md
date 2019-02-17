@@ -28,3 +28,8 @@ Display the seed of whatever room you're in. Also records seeds to Hades/Seeds.t
 
 ## Compatibility
 The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order
+
+## Disclaimer
+These mods aren't endorsed by Supergiant Games.  
+Any game crashes, save corruption, crashes or other problems due to installing these mods are not their responsibility to deal with.
+If you have any questions about modding, or are having issues with any of my mods, feel free to contact me on Discord (Ship#0001)
