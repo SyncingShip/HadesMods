@@ -9,6 +9,9 @@ Causes the "Chamber X" text to always display, instead of just in the boon menu.
 Multiplies all darkness gained by 100. The tooltip will not show the different amount, so keep an eye on your darkness total at the bottom right when picking up darkness to see if the mod is working  
 Note: This will also multiply the amount of darkness you lose when buying with darkness from the shopkeeper in the house of hades
 
+## Show the gosh darn seed
+Display the seed of whatever room you're in. Also records seeds to Hades/Seeds.txt
+
 ## Installation (Windows)
 1. BACK UP YOUR SAVE FILES. This mod should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
 2. Download and install [git](https://git-scm.com). This will be used for patching the game files.
