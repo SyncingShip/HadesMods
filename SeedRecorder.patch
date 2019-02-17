@@ -1,0 +1,49 @@
+From acfa2509b7ef9a938d1251569039c9489bc71b74 Mon Sep 17 00:00:00 2001
+From: DistressedWhale <samwhale1999@gmail.com>
+Date: Sun, 17 Feb 2019 02:57:26 +0000
+Subject: [PATCH] after mod
+
+---
+ UIScripts.lua | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+diff --git a/UIScripts.lua b/UIScripts.lua
+index 43ec3a0..7d3c166 100644
+--- a/UIScripts.lua
++++ b/UIScripts.lua
+@@ -509,6 +509,32 @@ function ShowMetaPointUI()
+ 		return
+ 	end
+ 
++
++
++	-- mod start
++	local seedForMod = GetGlobalRng().seed
++
++	if CurrentRun.SeedCache == nil then
++		--Initialize if it doesn't exist
++		CurrentRun.SeedCache = seedForMod
++	
++		--Create file
++		io.open("Seeds.txt", "w"):close()
++	end
++
++	if CurrentRun.SeedCache ~= seedForMod then
++		CurrentRun.SeedCache = seedForMod
++		--Write seed
++		file = io.open("Seeds.txt", "a")
++		file:write(tostring(GetRunDepth(CurrentRun)) .. ". " .. tostring(seedForMod), "\n"):close()
++	end
++
++	ScreenAnchors.SeedId = CreateScreenObstacle({ Name = "BlankObstacle", X = UIData.CurrentRunDepth.X, Y = UIData.CurrentRunDepth.Y + 20, Group = "Combat_Menu_Overlay" })
++	CreateTextBox( MergeTables( UIData.CurrentRunDepth.TextFormat, { Id = ScreenAnchors.SeedId, Text = "Seed: " .. tostring(seedForMod), } ) )
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 0, FadeDuration = 0.0 })
++	ModifyTextBox({ Id = ScreenAnchors.RunDepthId, FadeTarget = 1, FadeDuration = 0.1 })
++	-- mod end
++
+ 	ScreenAnchors.MetaPoint = CreateScreenObstacle({ Name = "BlankObstacle", Group = "Combat_UI", X = ConsumableUI.StartX + ConsumableUI.SpacerX * 2  + CombatUI.FadeDistance.MetaPoint, Y = ConsumableUI.StartY + ConsumableUI.SpacerY * 0 })
+ 
+ 	SetAnimation({ Name = "MetaPointIcon", DestinationId = ScreenAnchors.MetaPoint })
+-- 
+2.16.1.windows.4
+
