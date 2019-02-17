@@ -9,7 +9,7 @@ Causes the "Chamber X" text to always display, instead of just in the boon menu.
 Multiplies all darkness gained by 100. The tooltip will not show the different amount, so keep an eye on your darkness total at the bottom right when picking up darkness to see if the mod is working  
 Note: This will also multiply the amount of darkness you lose when buying with darkness from the shopkeeper in the house of hades
 
-## Show the gosh darn seed
+## Seed Recorder
 Display the seed of whatever room you're in. Also records seeds to Hades/Seeds.txt
 
 ## Installation (Windows)
