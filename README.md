@@ -35,9 +35,9 @@ An expansion to Seed Recorder, with more information and logging in a spreadshee
 ### Quick Death
 A suicide button, for quickly resetting a run
 ### Misc
-Adding new boons / gods
-Adding new UI elements, mod configuration menu
-Mod Loader
+Adding new boons / gods  
+Adding new UI elements, mod configuration menu  
+Mod Loader  
 
 ## Disclaimer
 These mods aren't endorsed by Supergiant Games.  
