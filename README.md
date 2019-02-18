@@ -29,6 +29,16 @@ Display the seed of whatever room you're in. Also records seeds to Hades/Seeds.t
 ## Compatibility
 The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order
 
+## Planned mods
+### Janus
+An expansion to Seed Recorder, with more information and logging in a spreadsheet
+### Quick Death
+A suicide button, for quickly resetting a run
+### Misc
+Adding new boons / gods
+Adding new UI elements, mod configuration menu
+Mod Loader
+
 ## Disclaimer
 These mods aren't endorsed by Supergiant Games.  
 Any game crashes, save corruption, crashes or other problems due to installing these mods are not their responsibility to deal with.  
