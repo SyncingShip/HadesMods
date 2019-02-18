@@ -40,6 +40,7 @@ Adding new UI elements, mod configuration menu
 Mod Loader  
 
 ## How to create and share your own mods (Through patch files)
+Patch files are used to distribute mods without hosting modified copies of Supergiant's source code (Since I don't think they'd like that)
 1. Navigate your command line to the Scripts folder
 2. Make sure your files are fresh by verifying your game files
 3. Create an empty git repository with `git init`
