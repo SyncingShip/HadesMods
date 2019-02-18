@@ -39,6 +39,19 @@ Adding new boons / gods
 Adding new UI elements, mod configuration menu  
 Mod Loader  
 
+## How to create and share your own mods (Through patch files)
+1. Navigate your command line to the Scripts folder
+2. Make sure your files are fresh by verifying your game files
+3. Create an empty git repository with `git init`
+4. Add the file you're going to make changes to `git add ScriptFile.lua`
+5. Commit the file to the repository `git commit -m "A descriptive message"`
+6. Make your changes
+7. Add the file you made changes to `git add ScriptFile.lua`
+8. Commit the file again `git commit -m "Another descriptive message"`
+9. Create the patch file `git format-patch HEAD^1..HEAD`
+10. Result: 0001-Another-Descriptive-Message.patch
+11. (Optional) Rename the patch file, share it with other people
+
 ## Disclaimer
 These mods aren't endorsed by Supergiant Games.  
 Any game crashes, save corruption, crashes or other problems due to installing these mods are not their responsibility to deal with.  
