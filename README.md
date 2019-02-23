@@ -24,7 +24,7 @@ Intended to be useful for speedrunners - To reset your seed you no longer need t
 4. Download this repository using "Clone or download" from the github page
 5. Download the [Prometheus Repository](https://github.com/SyncingShip/PrometheusLoader)
 6. Place the .patch files you wish to install inside the Mods folder of PrometheusLoader
-7. Run Prometheus throough8 the .bat file
+7. Run Prometheus through the .bat file
 
 ### Manual installation
 1. BACK UP YOUR SAVE FILES. So far these mods should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
