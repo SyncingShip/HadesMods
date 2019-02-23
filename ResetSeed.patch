@@ -1,0 +1,26 @@
+From 9003448eaaca2c7282080e95d8844612bd040897 Mon Sep 17 00:00:00 2001
+From: SyncingShip
+Date: Tue, 19 Feb 2019 22:41:24 +0000
+Subject: [PATCH] After mod
+
+---
+ AwardMenuScripts.lua | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/AwardMenuScripts.lua b/AwardMenuScripts.lua
+index 96195be..c8e4b83 100644
+--- a/AwardMenuScripts.lua
++++ b/AwardMenuScripts.lua
+@@ -424,6 +424,9 @@ function HandleUpgradeToggle( screen, button )
+ 	if GameState.LastAwardTrait ~= upgradeName then
+ 		SetSelectedFrame( button )
+ 		GameState.LastAwardTrait = upgradeName
++		if upgradeName == "MegaRubbleTrait" then
++			RandomSetNextInitSeed()
++		end
+ 		ModifyTextBox({ Id = ScreenAnchors.AwardMenuScreen.Components.EquipSubtitle.Id, Text = "Equipped_Subtitle", ColorTarget = Color.White, ColorDuration = 0.0, ScaleTarget = 1.4, ScaleDuration = 0.1 })
+ 		ModifyTextBox({ Id = ScreenAnchors.AwardMenuScreen.Components.EquipSubtitle.Id, Text = "Equipped_Subtitle", ColorTarget = Color.Gold, ColorDuration = 0.35, ScaleTarget = 1, ScaleDuration = 0.25, Delay = 0.1 })
+ 		PlaySound({ Name = upgradeData.EquipSound or "/Leftovers/Menu Sounds/TalismanPowderDownLEGENDARY" })
+-- 
+2.16.1.windows.4
+
