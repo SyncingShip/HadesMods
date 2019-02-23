@@ -17,9 +17,21 @@ Choosing the Shattered Shackle in the House of Hades will reset your seed.
 Intended to be useful for speedrunners - To reset your seed you no longer need to wait for enemies to kill you
 
 ## Installation (Windows)
+### Installation though Prometheus
+1. BACK UP YOUR SAVE FILES. So far these mods should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
+2. Download and install [Git](https://git-scm.com). This will be used for patching the game files.
+3. Download and install [Python 3](https://www.python.org)
+4. Download this repository using "Clone or download" from the github page
+5. Download the [Prometheus Repository](https://github.com/SyncingShip/PrometheusLoader)
+
+6. Place the .patch files you wish to install inside the Mods folder of PrometheusLoader
+7. Run Prometheus throough8 the .bat file
+
+### Manual installation
 1. BACK UP YOUR SAVE FILES. So far these mods should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
 2. Download and install [git](https://git-scm.com). This will be used for patching the game files.
 3. Download this repository using "Clone or download" from the github page
+
 4. If you chose Use Git Bash Only, open Git Bash from the start menu. If you chose either of the other options, open Powershell or CMD
 5. Navigate your command line to the scripts folder with   
 `cd [Hades folder]/Content/Scripts`
@@ -31,17 +43,7 @@ Intended to be useful for speedrunners - To reset your seed you no longer need t
 1. Right click on Hades -> Verify through the Epic Games Store
 
 ## Compatibility
-The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order
-
-## Planned mods
-### Janus
-An expansion to Seed Recorder, with more information and logging in a spreadsheet
-### Quick Death
-A suicide button, for quickly resetting a run
-### Misc
-Adding new boons / gods  
-Adding new UI elements, mod configuration menu  
-Mod Loader  
+The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order 
 
 ## How to create and share your own mods (Through patch files)
 Patch files are used to distribute mods without hosting modified copies of Supergiant's source code (Since I don't think they'd like that)
