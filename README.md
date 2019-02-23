@@ -12,6 +12,10 @@ Note: This will also multiply the amount of darkness you lose when buying with d
 ## Seed Recorder
 Display the seed of whatever room you're in. Also records seeds to Hades/Seeds.txt
 
+## Reset Seed
+Choosing the Shattered Shackle in the House of Hades will reset your seed.  
+Intended to be useful for speedrunners - To reset your seed you no longer need to wait for enemies to kill you
+
 ## Installation (Windows)
 1. BACK UP YOUR SAVE FILES. So far these mods should make no difference to save files, but it is possible to corrupt your save files with code edits similar to this. Saves can be found in `Username/Documents/Saved Games/Hades` 
 2. Download and install [git](https://git-scm.com). This will be used for patching the game files.
