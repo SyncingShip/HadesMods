@@ -38,7 +38,11 @@ Intended to be useful for speedrunners - To reset your seed you no longer need t
 `git apply [path to .patch file]`
 
 ## Uninstalling (Windows)
-1. Right click on Hades -> Verify through the Epic Games Store
+Epic Games Store:
+- Right click on Hades -> Verify files
+
+Steam: 
+- Right Click on Hades -> Properties -> Local Files -> Verify Integrity of Game Files
 
 ## Compatibility
 The current mods in this repository work with eachother, as they affect different files in different locations. Just apply each patch in whatever order 
